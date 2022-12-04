@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanuatu Adventours | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<div id="content">
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="contactus.html" class="next">Next &raquo;</a> 
+
+<header>
+        <a id="logo_link" href="index.html"><img class="logo" src="images/life.jpg" alt="Vanuatu Adventour">
+    </a>
+      <nav> 
+         <a href="index.html">Home</a>
+         <a href="contactus.html">Contact Us</a>
+         <a href="faq.html">FAQ</a>
+         
+      </nav>
+</header>
+      
+ <main>   
+    <div class="banner-box">
+    
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <img id="hero-img" src="images/jumping_bridge.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+    <img id="hero-img" src="images/blu_lagoon.JPG" style="width:100%">
+    </div>
+
+
+    <div class="mySlides fade">
+    <img id="hero-img" src="images/caption.jpg" style="width:100%">
+    </div>
+
+   <br>
+   <div style="text-align:center">
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   </div>
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+  
+  
+  <div class="home-grid">
+  <h2 class="home-headline-1">WELCOME TO VANUATU ADVENTOURS</h2>
+
+  <p class="home-paragraph-1">
+  Vanuatu Adventour is a locally owned and tour operator fully registered with the department 
+  of tourism which allows us to provide safe and professional tours. Our aim is to provide a service of 
+  the highest quality and we will go beyond to do so. Our knowledge of Vanuatu ensure we provide exciting
+  tours for individual or groups that are always fun and enjoyable and we believe that you will not be 
+  disappointed when you travel with us. The trips you make with Vanuatu Adventours 
+  in Port Vila, Vanuatu worthwhile and memorable.
+   </p>
+
+
+   <img class="lagoon-img" src="images/blue-water.jpg" alt="People enjoying the blue lagoon">
+  
+  
+
+   <h2 class="home-headline-2">What are the best blue holes in Vanuatu?</h2>
+
+   <p class="home-paragraph-2">
+    These brilliant blue holes can be found all over Vanuatu. If you are staying on Efate Island, 
+    Vanuatu's most popular holiday destination, the Blue Lagoon is an absolute must-visit.  Located 
+    on the eastern side of Efate, the coolness of this unique blue water pool must be an experience 
+    to remember in life. This is for people who want to have an unforgettable experience swimming 
+    and cooling down from the tropical temperature in a crystal blue water pool with natural green
+    forest surroundings.
+   </p>
+          
+  <img class="local-img" src="images/blue-wota.jpg" alt="Locals enjoying the blue lagoon">
+   
+   <section class="home-paragraph-3">
+   <h2>Book your holiday with us!</h2>
+   <p class="home-p-3">
+    Our packages are the easiest way to save and are the ideal way to experience the island’s culture
+    and beauty. Take the stress out of planning and book your holiday with us. Our packages offer you 
+    significant savings and exclusive access to a range of benefits. By combining all your travel needs 
+    into one convenient package, you can save on everything including tours, transfers, meals, and more.
+    </p>
+   </section> 
+   </div>     
+
+   </main>
+
+     <footer>
+        
+        <p>Vanuatu Adventours &copy; 2022 - Joel Nungwarara Tarivuhavuha</p>
+        <p><a href="contactus.html">Contact Us</a></p>
+
+        <div class="social">
+        <a href="https://facebook.com" target="blank">
+        <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="blank">
+        <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://twitter.com" target="blank">
+        <img src="images/instagram.png" alt="intagram icon">
+        </a> 
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

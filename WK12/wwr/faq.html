@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanuatu Adventours | FAQ</title>
+    <link rel="stylesheet" href="styles/faq.css">
+</head>
+
+<body>
+
+<div id="content">
+
+<a href="contactus.html" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+
+
+<header>
+        
+ <a id="logo_link" href="index.html"><img class="logo" src="images/life.jpg" alt="Life Adventures">
+    </a>
+      <nav> 
+           <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+    </nav>
+
+</header>
+
+<main>
+    <div id="hero">
+        <div id="hero-box">
+        <img id="hero-img" src="images/caption2.JPG">
+    </div>
+
+    </div>
+   <button class="accordion">
+      Is this a good trip for kids?
+   </button>
+     <div class="panel">
+       <p>
+         Absolutely this is a good trip for children of all ages. We have
+         found however that children over the age of 8 seem to enjoy it more
+         overall.
+        </p>
+      </div>
+
+    <button class="accordion">
+         Is Vanuatu Adventours safe? 
+     </button>
+        <div class="panel">
+          <p>
+            To help ensure your safety, our guides are all
+            certified in First aid and all start with at least 3
+            years of experience. 
+          </p>
+        </div>
+
+        <button class="accordion">What is included in the trip?</button>
+        <div class="panel">
+          <p>
+            We will provide all necessary equipment. This includes a
+            water, lemonade, snucks and 3 meals per day.
+          </p>
+        </div>
+
+        <button class="accordion">
+           What is so great about Vanuatu Adventours anyway?
+             </button>
+            <div class="panel">
+            <p>
+            We provide a service of the highest quality and we will go beyond to do so.
+          </p>
+        </div>
+
+        <button class="accordion">
+          How far in advance should I book my trip?
+           </button>
+             <div class="panel">
+             <p>
+            If you have specific dates you need, we recommend booking a month in
+            advance. 
+          </p>
+        </div>
+        
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
+
+
+</main>
+
+      <footer> 
+       <p>Vanuatu Adventours &copy; 2022 - Joel Nungwarara Tarivuhavuha</p>
+         <p><a href="contactus.html">Contact Us</a></p>
+           <div class="social">
+            <a href="https://facebook.com" target="blank">
+            <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="blank">
+            <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://twitter.com" target="blank">
+           <img src="images/instagram.png" alt="intagram icon">
+         </a> 
+         </div>    
+      </footer>
+  </body>
+</html>
+
+
+
+
